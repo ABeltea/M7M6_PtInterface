@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IncidenciesController">
+   <center>
+      <AnchorPane maxHeight="800.0" maxWidth="919.0" minHeight="751.0" minWidth="546.0" prefHeight="752.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane layoutX="14.0" layoutY="74.0" prefHeight="751.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab text="HISTORIAL">
+                     <content>
+                        <VBox prefHeight="687.0" prefWidth="466.0">
+                           <children>
+                              <AnchorPane prefHeight="177.0" prefWidth="606.0">
+                                 <children>
+                                    <Label layoutX="36.0" layoutY="17.0" text="Código" />
+                                    <Label layoutX="343.0" layoutY="16.0" text="Aula" />
+                                    <Label layoutX="36.0" layoutY="59.0" text="Autor" />
+                                    <CheckBox fx:id="isActivo" layoutX="715.0" layoutY="17.0" mnemonicParsing="false" text="Estado activo" />
+                                    <DatePicker fx:id="dataIncidencia" layoutX="417.0" layoutY="64.0" prefHeight="32.0" prefWidth="185.0" />
+                                    <TextField fx:id="codiIncidencia" layoutX="114.0" layoutY="11.0" />
+                                    <TextField fx:id="creador" layoutX="114.0" layoutY="58.0" />
+                                    <TextField fx:id="aula" layoutX="416.0" layoutY="11.0" />
+                                    <Label layoutX="36.0" layoutY="103.0" text="Descripción" />
+                                    <TextField fx:id="descripcio" layoutX="36.0" layoutY="126.0" prefHeight="31.0" prefWidth="679.0" />
+                                    <Button layoutX="822.0" layoutY="126.0" mnemonicParsing="false" text="Buscar" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </AnchorPane>
+                              <TableView prefHeight="476.0" prefWidth="137.0">
+                                <columns>
+                                  <TableColumn prefWidth="108.0" text="Fecha" />
+                                  <TableColumn text="Código" />
+                                    <TableColumn prefWidth="94.0" text="Estado" />
+                                    <TableColumn prefWidth="147.0" text="Asunto" />
+                                    <TableColumn prefWidth="76.0" text="Aula" />
+                                    <TableColumn prefWidth="100.0" text="Creador" />
+                                    <TableColumn prefWidth="194.0" text="Descripción" />
+                                </columns>
+                                 <VBox.margin>
+                                    <Insets left="50.0" right="50.0" top="25.0" />
+                                 </VBox.margin>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </content>
+                </Tab>
+                <Tab text="CREAR">
+                  <content>
+                    <AnchorPane>
+                           <children>
+                              <Button layoutX="797.0" layoutY="652.0" mnemonicParsing="false" text="Crear" />
+                              <Label layoutX="140.0" layoutY="110.0" text="Código" />
+                              <Label layoutX="101.0" layoutY="425.0" text="Descripción" />
+                              <Label layoutX="101.0" layoutY="267.0" text="Fecha" />
+                              <Label layoutX="96.0" layoutY="176.0" text="Aula" />
+                              <Label layoutX="103.0" layoutY="346.0" text="Asunto" />
+                              <TextField layoutX="305.0" layoutY="105.0" />
+                              <TextField layoutX="305.0" layoutY="171.0" />
+                              <TextField layoutX="305.0" layoutY="341.0" prefHeight="31.0" prefWidth="475.0" />
+                              <TextField layoutX="305.0" layoutY="425.0" prefHeight="210.0" prefWidth="475.0" />
+                              <DatePicker layoutX="305.0" layoutY="262.0" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="ACCIONES">
+                     <content>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="656.0" prefWidth="450.0">
+                                 <children>
+                                    <TableView layoutX="42.0" layoutY="111.0" prefHeight="553.0" prefWidth="290.0">
+                                      <columns>
+                                        <TableColumn prefWidth="86.0" text="Código" />
+                                        <TableColumn prefWidth="89.0" text="Aula" />
+                                          <TableColumn prefWidth="114.0" text="Asunto" />
+                                      </columns>
+                                    </TableView>
+                                    <Label fx:id="title" layoutX="42.0" layoutY="31.0" text="LISTADO DE INCIDENCIAS" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="712.0" prefWidth="600.0">
+                                 <children>
+                                    <TableView layoutY="105.0" prefHeight="576.0" prefWidth="511.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="105.0">
+                                      <columns>
+                                          <TableColumn prefWidth="95.0" text="Fecha" />
+                                        <TableColumn prefWidth="115.0" text="Código" />
+                                        <TableColumn prefWidth="148.0" text="Acción" />
+                                          <TableColumn prefWidth="152.0" text="Descripción" />
+                                      </columns>
+                                    </TableView>
+                                    <Label fx:id="title" layoutX="14.0" layoutY="33.0" text="LISTADO DE ACCIONES DE ACCIONES" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </content>
+                  </Tab>
+              </tabs>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </TabPane>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="66.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="title" text="GESTOR INCIDENCIES" />
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

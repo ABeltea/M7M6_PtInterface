@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="900.0" minHeight="800.0" minWidth="230.0" prefHeight="800.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <HBox prefHeight="800.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="idUsuari" />
+                  <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Button mnemonicParsing="false" onAction="#carregarUsuaris" text="Perfil" />
+                        <Button mnemonicParsing="false" onAction="#carregarIncidencies" text="Incidencias" />
+                        <Button mnemonicParsing="false" text="Imprimir" />
+                        <Button mnemonicParsing="false" onAction="#carregarAjustes" text="Ajustes" />
+                        <Button fx:id="logout" mnemonicParsing="false" text="Logout" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneVista" prefHeight="800.0" prefWidth="800.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

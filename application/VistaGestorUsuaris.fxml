@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="usuariPane1" prefHeight="349.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" layoutX="32.0" layoutY="40.0" text="INFORMACIÓN DEL PERFIL" />
+                  <Button layoutX="795.0" layoutY="35.0" mnemonicParsing="false" text="Gestor" />
+                  <Button layoutX="729.0" layoutY="655.0" mnemonicParsing="false" text="Guardar cambios" />
+                  <Label layoutX="87.0" layoutY="97.0" text="Nombre" />
+                  <Label layoutX="142.0" layoutY="193.0" text="Apellidos" />
+                  <Label layoutX="156.0" layoutY="244.0" text="Correo" />
+                  <Label layoutX="156.0" layoutY="387.0" text="Permisos" />
+                  <Label layoutX="120.0" layoutY="562.0" text="Contraseña nueva" />
+                  <Label layoutX="120.0" layoutY="532.0" text="Contraseña actual" />
+                  <Label layoutX="122.0" layoutY="597.0" text="Confirmar contraseña" />
+                  <TextField layoutX="180.0" layoutY="92.0" />
+                  <PasswordField layoutX="281.0" layoutY="527.0" />
+                  <PasswordField layoutX="281.0" layoutY="568.0" />
+                  <PasswordField layoutX="297.0" layoutY="608.0" />
+                  <TextField layoutX="254.0" layoutY="393.0" />
+                  <TextField layoutX="265.0" layoutY="239.0" />
+                  <TextField layoutX="239.0" layoutY="178.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="82.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" layoutX="37.0" layoutY="29.0" text="GESTOR DE USUARIOS" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
