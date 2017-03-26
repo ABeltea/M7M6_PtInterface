@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="900.0" minHeight="800.0" minWidth="230.0" prefHeight="800.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <HBox prefHeight="800.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" spacing="50.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin></ImageView>
+                        <Label fx:id="idUsuari" textAlignment="CENTER" />
+                        <Button mnemonicParsing="false" onAction="#carregarUsuaris" text="Perfil" />
+                        <Button mnemonicParsing="false" onAction="#carregarIncidencies" text="Incidencias" />
+                        <Button fx:id="ajustes" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" text="Ajustes" />
+                        <Button fx:id="logout" mnemonicParsing="false" text="Logout" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollado por" />
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pelegrín Oliveras, Marina" />
+                                    <HBox alignment="TOP_CENTER" prefHeight="150.0" prefWidth="202.0">
+                                       <children>
+                                          <ImageView fx:id="fb" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="gh" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+                                          <ImageView fx:id="gm" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="paneVista" prefHeight="800.0" prefWidth="800.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="paneVista" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HistorialController">
+   <bottom>
+      <AnchorPane prefHeight="59.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="close" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Cerrar" />
+            <Button fx:id="crear" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" text="+" />
+            <Button fx:id="delete" layoutX="489.0" layoutY="14.0" mnemonicParsing="false" text="Eliminar" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane maxHeight="800.0" maxWidth="919.0" minHeight="265.0" minWidth="546.0" prefHeight="550.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tabla" layoutX="6.0" layoutY="3.0" prefHeight="388.0" prefWidth="637.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="3.0" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

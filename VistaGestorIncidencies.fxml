@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.IncidenciesController">
+   <center>
+      <AnchorPane maxHeight="800.0" maxWidth="919.0" minHeight="751.0" minWidth="546.0" prefHeight="752.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="687.0" prefWidth="466.0">
+               <children>
+                  <AnchorPane prefHeight="177.0" prefWidth="606.0">
+                     <children>
+                        <Label layoutX="36.0" layoutY="17.0" text="Código" />
+                        <Label layoutX="343.0" layoutY="16.0" text="Aula" />
+                        <Label layoutX="36.0" layoutY="59.0" text="Autor" />
+                        <CheckBox fx:id="isActivo" layoutX="688.0" layoutY="17.0" mnemonicParsing="false" text="Estado activo" />
+                        <DatePicker fx:id="dataIncidencia" layoutX="417.0" layoutY="64.0" prefHeight="32.0" prefWidth="185.0" />
+                        <TextField fx:id="codiIncidencia" layoutX="114.0" layoutY="11.0" />
+                        <TextField fx:id="creador" layoutX="114.0" layoutY="58.0" />
+                        <TextField fx:id="aula" layoutX="416.0" layoutY="11.0" />
+                        <Label layoutX="36.0" layoutY="103.0" text="Descripción" />
+                        <TextField fx:id="descripcio" layoutX="36.0" layoutY="126.0" prefHeight="31.0" prefWidth="679.0" />
+                        <Button fx:id="buscar" layoutX="822.0" layoutY="126.0" mnemonicParsing="false" text="Buscar" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </AnchorPane>
+                  <TableView fx:id="tabla" prefHeight="470.0" prefWidth="130.0">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="25.0" />
+                     </VBox.margin>
+                  </TableView>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="66.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="title" text="GESTOR INCIDENCIES" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="61.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="acciones" layoutX="729.0" layoutY="13.0" mnemonicParsing="false" text="Historial de acciones" />
+            <Button fx:id="eliminar" layoutX="634.0" layoutY="14.0" mnemonicParsing="false" text="Eliminar" />
+            <Label id="title" text="PANEL DE OPCIONES" />
+            <Button fx:id="crear" layoutX="574.0" layoutY="14.0" mnemonicParsing="false" text="+" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+	-fx-base: rgb(161, 187, 252);
+	-fx-background: rgb(210, 250, 255);
+	-fx-control-inner-background:  rgb(131, 186, 224);
+}
+/*
+.button:hover {
+	-fx-background: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+	-fx-color: -fx-hover-base;
+}*/

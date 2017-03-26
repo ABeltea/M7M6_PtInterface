@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paneVista" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UsuarisController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="usuariPane1" prefHeight="349.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" layoutX="32.0" layoutY="40.0" text="INFORMACIÓN DEL PERFIL" />
+                  <Button fx:id="gestor" layoutX="795.0" layoutY="35.0" mnemonicParsing="false" text="Gestor" />
+                  <Button fx:id="guardar" layoutX="729.0" layoutY="655.0" mnemonicParsing="false" text="Guardar cambios" />
+                  <Label layoutX="142.0" layoutY="123.0" text="Nombre" />
+                  <Label layoutX="142.0" layoutY="193.0" text="Apellidos" />
+                  <Label layoutX="158.0" layoutY="255.0" text="Correo" />
+                  <Label layoutX="140.0" layoutY="311.0" text="Permisos" />
+                  <Label layoutX="92.0" layoutY="520.0" text="Contraseña nueva" />
+                  <Label layoutX="92.0" layoutY="454.0" text="Contraseña actual" />
+                  <Label layoutX="71.0" layoutY="579.0" text="Confirmar contraseña" />
+                  <TextField fx:id="nomUser" layoutX="239.0" layoutY="118.0" prefHeight="30.0" prefWidth="600.0" />
+                  <PasswordField fx:id="pwUser" layoutX="239.0" layoutY="449.0" prefHeight="30.0" prefWidth="600.0" />
+                  <PasswordField fx:id="newPW" layoutX="239.0" layoutY="515.0" prefHeight="30.0" prefWidth="600.0" />
+                  <PasswordField fx:id="newPWConfirm" layoutX="239.0" layoutY="574.0" prefHeight="30.0" prefWidth="600.0" />
+                  <TextField fx:id="rol" layoutX="239.0" layoutY="306.0" prefHeight="30.0" prefWidth="600.0" />
+                  <TextField fx:id="emailUser" layoutX="239.0" layoutY="250.0" prefHeight="30.0" prefWidth="600.0" />
+                  <TextField fx:id="cognomUser" layoutX="239.0" layoutY="188.0" prefHeight="30.0" prefWidth="600.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="82.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title" layoutX="37.0" layoutY="29.0" text="GESTOR DE USUARIOS" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

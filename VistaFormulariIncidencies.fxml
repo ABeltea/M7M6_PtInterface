@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="paneVista" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormulariController">
+   <bottom>
+      <AnchorPane prefHeight="59.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="cancelar" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Cancelar" />
+            <Button fx:id="crear" layoutX="580.0" layoutY="14.0" mnemonicParsing="false" text="Crear" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane maxHeight="800.0" maxWidth="919.0" minHeight="265.0" minWidth="546.0" prefHeight="550.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="25.0" layoutY="166.0" text="Descripción" />
+            <Label layoutX="65.0" layoutY="40.0" text="Aula" />
+            <Label layoutX="50.0" layoutY="96.0" text="Asunto" />
+            <TextField fx:id="aulaAdd" layoutX="118.0" layoutY="35.0" prefHeight="31.0" prefWidth="450.0" />
+            <TextField fx:id="comAdd" layoutX="118.0" layoutY="91.0" prefHeight="31.0" prefWidth="450.0" />
+            <TextArea fx:id="desAdd" layoutX="118.0" layoutY="166.0" prefHeight="200.0" prefWidth="450.0" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
